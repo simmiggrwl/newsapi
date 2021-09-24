@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header_search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 2rem;
+}
+
+.ex {
+  text-decoration: none;
+}
+
+.news_card {
+  text-decoration: none;
+  color: #080808;
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.news_card:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0);
+}
+
+.filter, .keyword {
+  margin: 10px;
+}
+
+.keyword {
+  margin-right: 50px;
+}
+
+.filter input[type="submit"] {
+  margin-left: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: #04181a;
+  color: white;
+}
+
+.filter select{
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.header_search input[type="text"] {
+  padding: 6px;
+  border: none;
+}
+
+.keyword input[type="submit"] {
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: #04181a;
+  color: white;
+}

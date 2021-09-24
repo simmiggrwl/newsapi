@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>News</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_logo">News</div>
+      <%- include('./partials/search.ejs') %>
+    </header>
+
+    <div class="wrapper">
+      <div class="news">
+        <% if(articles != null) { %> <% articles.forEach(function(article,
+        index){ %>
+        <div class="news_card">
+          <img
+            src="<%- article.urlToImage %>"
+            alt="Image could not be loaded: <%- article.title %>"
+          />
+          <h2><%- article.title %></h2>
+          <a href=<%- article.url %> target="_blank"><%- article.url %></a>
+          <p><%- article.description %></p>
+        </div>
+        <% }) %> <% } else {%> Error getting data. <% } %>
+      </div>
+    </div>
+  </body>
+</html>
